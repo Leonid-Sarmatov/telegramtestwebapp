@@ -35,12 +35,17 @@
   </style>
   <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
   <script>
+    let tg = window.Telegram.WebApp;
     function sendTileInfo(tileId) {
-      // Replace this with your server request logic   1px solid #ccc
+      // Replace this with your server request logic   
+      
+      // 1px solid #ccc
       // margin: 10px;
       console.log('Tile ID:', tileId);
+      
       // You can use AJAX or fetch to send the request to the server
       // данные для отправки
+      /*
       const messageToServer = {
           name: "Tom",
           age: 37,
@@ -53,6 +58,7 @@
       xhr.open("GET", "https://95.163.240.176:443/app");
       xhr.setRequestHeader("Content-Type", "application/json");
       xhr.send(data);
+      */
     }
   </script>
   </head>
