@@ -29,6 +29,19 @@
       // Replace this with your server request logic
       console.log('Tile ID:', tileId);
       // You can use AJAX or fetch to send the request to the server
+      // данные для отправки
+      const messageToServer = {
+          name: "Tom",
+          age: 37,
+          buttonID: tileId
+      };
+      // кодируем объект в формат json
+      const data = JSON.stringify(messageToServer);
+      const xhr = new XMLHttpRequest();
+      
+      xhr.open("POST", "/user");
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(data);
     }
   </script>
   <script type="application/javascript">
